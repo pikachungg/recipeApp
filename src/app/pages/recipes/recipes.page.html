@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Recipify</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+ 
+  <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="searchChanged($event)"></ion-searchbar>
+ 
+ 
+  <ion-list>
+ 
+    <ion-item button *ngFor="let item of (results | async)" [routerLink]="['/', 'recipes', item.uri]">
+      <ion-avatar slot="start">
+        <img [src]="item.recipe.image" *ngIf="item.imge != 'N/A'">
+      </ion-avatar>
+ 
+      <ion-label text-wrap>
+        <h3>{{ item.recipe.label}}</h3>
+      </ion-label>
+ 
+    </ion-item>
+ 
+  </ion-list>
+ 
+</ion-content>
