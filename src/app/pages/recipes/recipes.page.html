@@ -11,13 +11,13 @@
  
   <ion-list>
  
-    <ion-item button *ngFor="let item of (results | async)" [routerLink]="['/', 'recipes', item.uri]">
+    <ion-item button *ngFor="let item of (results | async)" [routerLink]="['/', 'recipes', item.id]">
       <ion-avatar slot="start">
-        <img [src]="item.recipe.image" *ngIf="item.imge != 'N/A'">
+        <img [src]="'https://spoonacular.com/recipeImages/' + item.image" *ngIf="item.imge != 'N/A'">
       </ion-avatar>
  
       <ion-label text-wrap>
-        <h3>{{ item.recipe.label}}</h3>
+        <h3>{{ item.title}}</h3>
       </ion-label>
  
     </ion-item>
