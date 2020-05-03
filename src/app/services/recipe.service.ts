@@ -49,7 +49,7 @@ export class RecipeService {
 
   searchData(name: string):Observable<any>{
     console.log(`${this.url}search?apiKey=${this.api_key}&number=3&q=${name}`)
-    return this.http.get(`${this.url}search?apiKey=${this.api_key}&number=10&query=${name}`).pipe(
+    return this.http.get(`${this.url}search?apiKey=${this.api_key}&number=100&query=${name}`).pipe(
       map(results=> {
         console.log(results['results']);
         return results['results'];

@@ -1,0 +1,28 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.recipe-picture{
+    width: 100vw;
+    height: 50vh;   
+}
+
+.ingredients-list {
+    margin-left: 10%;
+    width: 50vw;
+}
+
+.ingredients-list h1{
+    color: #bd4545;
+    font-weight: 700;
+}
+
+.ingredients-list p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.instructions{
+    margin: 5% 10% 10%;
+}
