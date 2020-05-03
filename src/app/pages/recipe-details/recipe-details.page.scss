@@ -12,9 +12,14 @@
     width: 50vw;
 }
 
-.ingredients-list h1{
+.ingredients-title{
+    margin-left: 10%;
+}
+
+h1{
     color: #bd4545;
     font-weight: 700;
+    font-size: 300%;
 }
 
 .ingredients-list p {
@@ -25,4 +30,9 @@
 
 .instructions{
     margin: 5% 10% 10%;
+}
+
+.footer{
+    text-align: center;
+    color: #d3693f;
 }
